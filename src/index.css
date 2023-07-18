@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* can define that tailwind doesnt offer here and use them */
+.radial-blue {
+    background: radial-gradient(lightblue, blue);
+}

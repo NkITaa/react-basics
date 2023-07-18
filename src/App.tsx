@@ -19,6 +19,7 @@ import Tutorial4 from "./components/tutorial4/tutorial4";
 import { Tutorial5 } from "./components/tutorial5/tutorial5"; */
 
 import { ThemeProvider } from "styled-components";
+import { Tutorial6 } from "./components/tutorial6/tutorial6";
 
 const theme = {
   colors: {
@@ -31,6 +32,12 @@ const theme = {
 };
 
 function App() {
+  return (
+    <>
+      <Tutorial6 />
+    </>
+  );
+
   /*   from Tutorial 1
   namesData.map((data) => {
     return <Card {...data} />;
@@ -77,6 +84,7 @@ const person: Person = {
     return <Tutorial3 box={box} handleClick={increaseId} />;
   }); */
 
+  /* Tutorial 4  
   return (
     <ThemeProvider theme={theme}>
       <>
@@ -84,7 +92,7 @@ const person: Person = {
         <Tutorial4 />
       </>
     </ThemeProvider>
-  );
+  ); */
 
   /* Tutorial 5
   return (
