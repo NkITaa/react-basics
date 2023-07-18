@@ -2,6 +2,8 @@
 import Card from "./components/tutorial1/card";
 import namesData from "./assets/namesData"; */
 
+import { Tutorial7 } from "./components/tutorial7/tutorial7";
+
 /* From Tutorial 2
 import Tutorial2 from "./components/tutorial2/tutorial2";
 import { useState } from "react";
@@ -12,15 +14,12 @@ import { useState } from "react";
 import Tutorial3 from "./components/tutorial3/tutorial3";
 import { Box, boxes } from "./components/tutorial3/boxes"; */
 
+/* Tutorial 4
 import GlobalStyles from "./components/Global";
-import Tutorial4 from "./components/tutorial4/tutorial4";
+import Tutorial4 from "./components/tutorial4/tutorial4"; */
 
 /* 
-import { Tutorial5 } from "./components/tutorial5/tutorial5"; */
-
-import { ThemeProvider } from "styled-components";
-import { Tutorial6 } from "./components/tutorial6/tutorial6";
-
+import { Tutorial5 } from "./components/tutorial5/tutorial5"; 
 const theme = {
   colors: {
     primary: "#f8049c",
@@ -29,15 +28,13 @@ const theme = {
     background: "#f5fcff",
   },
   mobile: "768px",
-};
+};*/
+
+/* Tutorial 6
+import { ThemeProvider } from "styled-components";
+import { Tutorial6 } from "./components/tutorial6/tutorial6"; */
 
 function App() {
-  return (
-    <>
-      <Tutorial6 />
-    </>
-  );
-
   /*   from Tutorial 1
   namesData.map((data) => {
     return <Card {...data} />;
@@ -83,7 +80,6 @@ const person: Person = {
   return boxesS.map((box: Box) => {
     return <Tutorial3 box={box} handleClick={increaseId} />;
   }); */
-
   /* Tutorial 4  
   return (
     <ThemeProvider theme={theme}>
@@ -93,13 +89,24 @@ const person: Person = {
       </>
     </ThemeProvider>
   ); */
-
   /* Tutorial 5
   return (
     <>
       <Tutorial5 />
     </>
   ); */
+  /*  Tutorial 6 
+  return (
+    <>
+      <Tutorial6 />
+    </>
+  ); */
+
+  return (
+    <>
+      <Tutorial7 />
+    </>
+  );
 }
 
 export default App;
