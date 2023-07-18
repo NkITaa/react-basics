@@ -10,3 +10,11 @@
 html {
         scroll-behavior: smooth;
   }
+
+
+/* My custom tailwind layer that I register in my tailwind.conf. extend */
+  @layer utilities {
+    .section-min-height {
+      min-height: calc(100vh - 68px);
+    }
+  }
